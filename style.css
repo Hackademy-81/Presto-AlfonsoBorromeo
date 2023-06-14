@@ -1,0 +1,51 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(#1c1917 58%, #ffb92a 50%);
+}
+
+:root{
+    --w: rgb(244,244,244);
+    --bln: #003459;
+    --bc: rgb(0, 168, 232);
+}
+
+.text-w{
+    color: var(--w)
+}
+
+.text-bc{
+    color: var(--bc);
+}
+
+.bg-w{
+    color: var(--w);
+}
+
+.bg-bln{
+    background-color: var(--bln);
+}
+
+
+
+/*Navbar*/
+
+
+.custom-logo{
+    height: 80px;
+}
+
+.navbar-nav a{
+    color: var(--bc);
+}
+
+.navbar-nav a:hover{
+    color: #76c893;
+    text-decoration: underline solid 3px;
+    zoom: 1.05;
+}
+
+/*Fine Navbar*/
