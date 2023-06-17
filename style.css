@@ -2,37 +2,53 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    height: 100vh;
+/* body{
+    min-height: 100vh;
+    width: 100%;
     background: linear-gradient(#1c1917 58%, #ffb92a 50%);
-}
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
 
 :root{
     --w: rgb(244,244,244);
-    --bln: #003459;
-    --bc: rgb(0, 168, 232);
+    --g: #ffb92a;
+    --blck: #1c1917;
+    --y:#ffee32;
+    --bug: rgb(165, 190, 0);
 }
 
 .text-w{
     color: var(--w)
 }
 
-.text-bc{
-    color: var(--bc);
+.text-g{
+    color: var(--g);
+}
+
+.text-blck{
+    color: var(--blck);
 }
 
 .bg-w{
-    color: var(--w);
+    background-color: var(--w);
 }
 
-.bg-bln{
-    background-color: var(--bln);
+.bg-g{
+    background-color: var(--g);
 }
 
+.bg-blck{
+    background-color: var(--blck);
+}
 
 
 /*Navbar*/
 
+.navbar{
+    background-color: transparent;
+    transition: 1s;
+}
 
 .custom-logo{
     height: 80px;
@@ -43,9 +59,68 @@ body{
 }
 
 .navbar-nav a:hover{
-    color: #76c893;
+    color: #ffee32;
     text-decoration: underline solid 3px;
     zoom: 1.05;
 }
 
+
+
 /*Fine Navbar*/
+
+/*Inizio Header*/
+
+h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    padding-bottom: 35%;
+    font-size: 72px;
+    background: -webkit-linear-gradient(360deg,#000000, #ffb92a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.search-container{
+    width: 100%;
+    background-color: transparent;
+    height: 39px;
+    border-radius: 30px;
+    align-items: center;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.8s;
+     border: 2px solid black;
+}
+
+.search-container:hover > .search-bar{
+    width: 400px;
+}
+
+.search-container .search-bar{
+    background-color: var((--blck));
+    border: none;
+    outline: none;
+    width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.8s;
+}
+
+.header-img{
+    height: 75%;
+    background-image:url(./media/anika-de-klerk-dWYjy9zIiF8-unsplash2.jpg);
+    background-position: left;
+    background-size: 100%;
+    animation-name: movement;
+    animation-iteration-count: infinite;
+    animation-duration: 2.0s;
+    animation-timing-function: linear;
+}
+
+
+@keyframes movement {
+    0%{background-position: top;}
+    100%{background-position: bottom;}
+}

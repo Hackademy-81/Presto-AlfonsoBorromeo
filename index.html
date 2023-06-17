@@ -14,31 +14,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
     </head>
 
   <body>
     
         <!--Inizio NAVBAR-->
 
-        <nav class="navbar navbar-expand-lg bg-bln fixed-top mx-auto">
+        <nav id="navbar" class="navbar navbar-expand-lg fixed-top mx-auto">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
-                <img src="./media/logo.png" alt="Logo" class="custom-logo">
+                <img src="./media/logo-blck.png" alt="Logo" class="custom-logo pt-3 img-fluid" id="logo">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto py-0">
+              <div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto me-auto text-blck">
                   <a class="nav-link" aria-current="page" href="#">Home</a>
                   <a class="nav-link" href="#">Features</a>
                   <a class="nav-link" href="#">Pricing</a>
                   <a class="nav-link" href="#">Disabled</a>
-                  <form class="d-flex" role="search">
-                    <input class="form-control" type="search" placeholder="Cerca nel sito..." aria-label="Search">
-                    <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: #00a8e8;"></i></button>
-                  </form>
-                </div>
+                  </div>
               </div>
             </div>
           </nav>
@@ -46,7 +46,27 @@
           <!--Fine Navbar-->
 
 
+          <!--Inizio Header-->
+        
+          <header class="container">
 
+            <div class="row vh-100 align-items-center">
+              <div class="col-12 col-md-6 text-center">
+                <h1 class="text-blck display-1">Presto</h1>
+                  <div class="search-container">
+                    <input type="text" class="search-bar text-center" placeholder="Cerca nel sito...">
+                    <a href="#" alt="bottone di ricerca"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffb92a;"></i></a>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 header-img img-fluid"></div>
+            </div>
+
+          </header>
+          
+      
+
+
+          <div class="vh-100"></div>
 
 
     <!--Fontawesome CDN-->
